@@ -11,5 +11,5 @@ Note: Implementing Runnable Interface is the most preferable way of implementati
 		* Object of class
 		* Thread object
 
-Tutotial Video:
+Tutorial Video:
 https://www.youtube.com/watch?v=A1tnVMpWHh8&list=PLsyeobzWxl7rmuFYRpkqLanwoG4pQQ7oW&index=9

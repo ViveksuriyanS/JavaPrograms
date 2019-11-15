@@ -21,4 +21,6 @@ abstract class Marriage {
 	}
 }
 
-// By defining the class as abstract we can define the 
+// By defining the class as abstract we can have the abstract/normal methods 
+// Abstract methods are methods with only declaration (Without Definition)
+// The method definition can be provided the class that extends the abstract class

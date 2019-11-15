@@ -17,7 +17,7 @@ public class ToStringEg {
 		this.hour = hour;
 		this.minute = minute;
 		this.second = second;
-		// this object implicitily calls toString
+		// this object implicitly calls toString
 		System.out.println(this);
 	}
 	

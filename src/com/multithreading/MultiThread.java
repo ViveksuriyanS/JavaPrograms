@@ -42,32 +42,28 @@ class B extends Thread {
 	}
 }
 
-
 // OUTPUT
-	
-//	A
-//	B
-//	A
-//	B
-//	A
-//	B
-//	B
-//	A
-//	B
-//	A
 
-
+//	A
+//	B
+//	A
+//	B
+//	A
+//	B
+//	B
+//	A
+//	B
+//	A
 
 // Output is printing in fashion A then B, till 3rd iteration
 // From fourth iteration B is printing before A
 // The reason being - We are starting both threads at same time (.01 Millisecond difference), CPU is allowing both the thread to print A/B
-// At some point both the thread are hitting the CPU at the same time
+// At some point, both the thread are hitting the CPU at the same time
 // We have something called scheduler, that process the thread 
 // Based on different property scheduler will pick one of the thread
 
 // In multiple thread request, the thread will be picked by scheduler based on the priority
 // If the thread doesn't have any priority, then the scheduler will pick a thread randomly
-
 
 // NOTE: ******** To avoid the thread collision, we can add sleep in between the thread, as commented in the code main method ******
 
