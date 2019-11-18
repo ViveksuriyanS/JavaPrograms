@@ -3,7 +3,6 @@ package com.java.polymorphism;
 public class ObjectCall {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ShowMethods s = new ShowMethods();
 		s.show(null); // null is not an object, so it calls show(String s)
 	}
@@ -12,7 +11,7 @@ public class ObjectCall {
 
 class ShowMethods {
 	public void show(String s) {
-		System.out.println("String");
+		System.out.println("String " + s);
 	}
 
 	public void show(Object s) {

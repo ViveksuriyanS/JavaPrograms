@@ -1,4 +1,4 @@
-package com.java.spring;
+package com.java.string;
 
 public class StringEquals {
 
@@ -12,11 +12,11 @@ public class StringEquals {
 		StringBuilder s4 = new StringBuilder("String");
 		System.out.println(s3 == s4);
 		System.out.println(s3.equals(s4));
-		System.out.println(s3.toString() == s4.toString()); // Objects are different		
+		System.out.println(s3.toString() == s4.toString()); // Objects are different
 		System.out.println(s3.toString().equals(s4.toString()));
 	}
 
 }
 
-// StringBuilder doesn't override Object's ".equals()" function, so both object references are not the same
-// For StringBuilder we can use s3.toString().equals(s4.toString())
+// StringBuilderX doesn't override Object's ".equals()" function, so both object references are not the same
+// For StringBuilderX we can use s3.toString().equals(s4.toString())

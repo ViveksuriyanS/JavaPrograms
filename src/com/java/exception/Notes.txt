@@ -1,0 +1,30 @@
+Compile Time Exception / Checked Exception
+ - Will not let you to compile successfully
+ - For eg., In eclipse, it will show error
+ - Programmer can take care of this
+ 
+
+RunTime Exceptions
+ - Will let the code to compile successfully
+ - But throw exception while running the compiled code
+ - For eg., ArrayIndexOutOfBound exception
+ 
+ 
+Exception Hierarchy
+-             Java.lang
+                  |
+               Objects
+                  |
+              Throwable
+                  |
+        __________________________
+       |                          |
+     Errors                    Exceptions
+                                  |
+                      ______________________________
+                     |                              |
+                Runtime Exceptions          Other Exceptions
+ 
+ 
+/ Compile Time Exception
+  - Will be

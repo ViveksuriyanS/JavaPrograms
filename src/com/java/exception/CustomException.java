@@ -4,7 +4,7 @@ public class CustomException {
 
 	public static void main(String[] args) {
 		try {
-			validate(18);
+			validate(17);
 		} catch (InvalidAgeException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

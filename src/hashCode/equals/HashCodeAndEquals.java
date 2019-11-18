@@ -14,6 +14,7 @@ public class HashCodeAndEquals {
 		Price key = new Price("Banana", 20);
 		System.out.println("Hashcode of the key: " + key.hashCode());
 		System.out.println("Value from map: " + hm.get(key));
+		System.out.println(hm);
 	}
 }
 
@@ -28,6 +29,7 @@ class Price {
 	}
 
 	// Hashcode generates a code using hashing function
+	// To store
 	public int hashCode() {
 		System.out.println("In hashcode");
 		int hashcode = 0;
@@ -38,6 +40,7 @@ class Price {
 		return hashcode;
 	}
 
+	// Equals
 	public boolean equals(Object obj) {
 		System.out.println("In equals");
 		if (obj instanceof Price) {
@@ -65,6 +68,6 @@ class Price {
 	}
 
 	public String toString() {
-		return "item: " + item + " price: " + price;
+		return "item: " + item + " Price: " + price;
 	}
 }
