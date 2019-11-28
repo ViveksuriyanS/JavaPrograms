@@ -24,7 +24,7 @@ public class ThreadJoinAndAlive {
 			}
 		});
 		t1.start();
-
+		t1.join();
 		t2.start();
 
 		// Makes current thread to process over other threads, (throws exception : LINE
@@ -32,7 +32,7 @@ public class ThreadJoinAndAlive {
 		System.out.println(t1.isAlive());
 		t1.join();
 		System.out.println(t1.isAlive());
-		t2.join();
+//		t2.join();
 
 		// We need to print BYE after t1 and t2 thread is done.
 		System.out.println("BYE");

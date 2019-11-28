@@ -1,0 +1,20 @@
+Given a list of lines  LinesX
+Given a list of words WordsX
+Given a number n
+
+
+1. Count the number of occurrences of a word in lines.
+2. Say 
+	* Hi ->> occurred in 1,3,7th lines => 3
+	* Bi ->> occurred in 2,3,7,8th lines => 4
+	* ki ->> occurred in 7,8th lines => 2
+	
+
+have to print first n number of occurrences
+Hi -> 3, Bi -> 4, Ki -> 2
+After sort by value
+Bi -> 4, Hi ->, Ki -> 2
+if N-> 2
+print only Bi and Hi
+if N->3
+print Bi, Hi, Ki in sorted order

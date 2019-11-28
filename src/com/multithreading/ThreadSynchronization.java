@@ -27,6 +27,7 @@ class Counter {
 	int count;
 
 	// Making the method synchronized
+	// If a method is being accessed by multiple threads, then there will be a concurrency issue.
 	public synchronized void increment() {
 		count++;
 	}
