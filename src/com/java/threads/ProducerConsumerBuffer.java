@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 public class ProducerConsumerBuffer {
 
 	public static void main(String args[]) {
-		Vector sharedQueue = new Vector();
+		Vector<Integer> sharedQueue = new Vector<Integer>();
 		int size = 4;
 		Thread prodThread = new Thread(new Producer(sharedQueue, size), "Producer");
 		Thread consThread = new Thread(new Consumer(sharedQueue, size), "Consumer");
@@ -19,10 +19,10 @@ public class ProducerConsumerBuffer {
 //Producer Class
 class Producer implements Runnable {
 
-	private final Vector sharedQueue;
+	private final Vector<Integer> sharedQueue;
 	private final int SIZE;
 
-	public Producer(Vector sharedQueue, int size) {
+	public Producer(Vector<Integer> sharedQueue, int size) {
 		this.sharedQueue = sharedQueue;
 		this.SIZE = size;
 	}
@@ -42,7 +42,7 @@ class Producer implements Runnable {
 
 	private void produce(int i) throws InterruptedException {
 
-		// wait if queue is full
+		// Wait if queue is full
 		while (sharedQueue.size() == SIZE) {
 			synchronized (sharedQueue) {
 				System.out.println("Queue is full " + Thread.currentThread().getName() + " is waiting , size: "
@@ -62,10 +62,10 @@ class Producer implements Runnable {
 
 class Consumer implements Runnable {
 
-	private final Vector sharedQueue;
+	private final Vector<Integer> sharedQueue;
 	private final int SIZE;
 
-	public Consumer(Vector sharedQueue, int size) {
+	public Consumer(Vector<Integer> sharedQueue, int size) {
 		this.sharedQueue = sharedQueue;
 		this.SIZE = size;
 	}

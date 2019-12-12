@@ -33,4 +33,4 @@ public class StringBufferX {
 // StringBuffer is mutable (Value changeable) String.
 // StringBuffer and StringBuilderX are mutable
 
-// The hashcode for StringBuffer remains the same, thats why we can able to chage the value even after the final is defined
+// The hashcode for StringBuffer remains the same, thats why we can able to change the value even after the final is defined

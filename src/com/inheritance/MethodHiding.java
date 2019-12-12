@@ -4,7 +4,8 @@ public class MethodHiding extends Parent {
 
 	public static void main(String[] args) {
 		Parent obj = new MethodHiding();
-		// This is not possible since the display method is hidden by declaring as private
+		// This is not possible since the display method is hidden by declaring as
+		// private
 //		obj.display(); 
 		obj.print();
 	}

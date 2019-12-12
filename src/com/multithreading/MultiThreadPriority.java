@@ -47,7 +47,7 @@ public class MultiThreadPriority {
 			System.out.println(e);
 		}
 		t2.start();
-		
+
 		// Get details of current thread
 		t1.currentThread();
 
