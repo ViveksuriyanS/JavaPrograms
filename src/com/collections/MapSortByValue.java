@@ -14,7 +14,11 @@ public class MapSortByValue {
 		map.put(6, 1);
 		map.put(4, 1);
 		map.put(3, 1);
+		// By default treeMap sort the map by key
 		System.out.println(map.entrySet());
 	}
 
 }
+
+
+// Incomplete

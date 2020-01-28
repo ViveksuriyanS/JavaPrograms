@@ -45,7 +45,7 @@ class Food implements Comparable<Food> {
 
 		if (price == food.price)
 			return 0;
-		else if (price > food.price) {
+		else if (food.price < price) {
 			return -1;
 		} else {
 			return 1;
@@ -54,6 +54,6 @@ class Food implements Comparable<Food> {
 }
 
 // Affects the original class
-// It single sorting sequence where only one element will be compared
+// It is single sorting sequence where only one element will be compared
 // Inside java.lang
 // To sort List using Collections.sort(List)

@@ -9,6 +9,7 @@ public class FinalKeyword extends ParentClass {
 
 	// Static blank Final Variable
 	final static int half_century;
+	
 	// Will be initialized in static block
 	static {
 		half_century = 50;
@@ -19,6 +20,7 @@ public class FinalKeyword extends ParentClass {
 		System.out.println(pie);
 	}
 
+	// Blank final variable initialization
 	public FinalKeyword() {
 		century = 100;
 	}
