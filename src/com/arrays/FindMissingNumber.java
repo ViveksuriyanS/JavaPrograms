@@ -27,10 +27,10 @@ public class FindMissingNumber {
 //		System.out.println(getMissingNo(arr, arr.length));
 //		System.out.println(getMissintNum(arr, arr.length));
 //		System.out.println(getMissingNumXOR(arr, arr.length));
-		for(int i=0;i<9;i++) {
-			System.out.println(i ^ (i+1));
+		for (int i = 0; i < 9; i++) {
+			System.out.println(i ^ (i + 1));
 		}
-		
+
 	}
 
 	private static int getMissingNumXOR(int[] arr, int length) {
@@ -56,11 +56,11 @@ public class FindMissingNumber {
 
 	public static int getMissintNum(int[] arr, int n) {
 		// Here n states the number of element in array -> 4
-		// *******But along with the missing number the size is -> 5******** n = n+1
+		// *******But along with the missing number the size is -> 5 ******** n = n+1
+		// x=> 5+4+3+2+1 == 15
 		int x = ((n + 1) * (n + 2)) / 2; // Actual formulae (n*(n+1))/2
 		for (int i = 0; i < n; i++) {
-			x = x - arr[i];
-
+			x -= arr[i]; // 15 - 1 => 14 - 2 => 12 - 3 => 9 - 5 => 4
 		}
 
 		return x;

@@ -1,8 +1,11 @@
 package com.java.objects;
 
 public class ObjectCreation {
+	int i;
+	String k;
 
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException {
+
 		// With new we can create an object
 		Object1 obj1 = new Object1();
 		obj1.i = 5;
@@ -14,6 +17,12 @@ public class ObjectCreation {
 		} catch (ClassNotFoundException e) {
 			System.out.println(e);
 		}
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return i + "  " + k;
 	}
 
 }

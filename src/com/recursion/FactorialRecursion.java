@@ -17,7 +17,7 @@ public class FactorialRecursion {
 		if (i == 1) {
 			return 1;
 		}
-		return recurseFactorial(i - 1) * i;
+		return i * recurseFactorial(i - 1) ;
 	}
 
 }

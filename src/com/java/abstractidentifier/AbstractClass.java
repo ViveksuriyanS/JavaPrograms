@@ -1,11 +1,12 @@
 package com.java.abstractidentifier;
 
-public class AbstractClass extends Marriage{
+public class AbstractClass extends Marriage {
 
 	public static void main(String[] args) {
 		AbstractClass ab = new AbstractClass();
-		ab.marriedTo("Ranveer Singh","Deepika Padukone");
-		ab.marriedTo("Ajith Kumar","Shalini");
+		ab.marriedTo("Ranveer Singh", "Deepika Padukone");
+		ab.marriedTo("Ajith Kumar", "Shalini");
+		ab.inLove("Vijay Dev.", "Rashmika");
 	}
 
 	void marriedTo(String man, String woman) {
@@ -15,9 +16,10 @@ public class AbstractClass extends Marriage{
 
 abstract class Marriage {
 	abstract void marriedTo(String M, String F);
+
 //	abstract void breakupWith(String M, String F);
 	public void inLove(String M, String F) {
-		System.out.println("Rashmika is in love with Vijay Dev.");
+		System.out.println(M + " is in love with " + F);
 	}
 }
 

@@ -29,3 +29,6 @@ public class SwitchFunctionString {
 	}
 
 }
+
+// From java8 switch supports String values as well
+// Earlier only integer values can be used

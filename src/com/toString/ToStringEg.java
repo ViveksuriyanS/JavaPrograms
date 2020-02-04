@@ -10,6 +10,7 @@ public class ToStringEg {
 	
 	public static void main(String[] args) {
 		ToStringEg obj = new ToStringEg(5,6,7);
+		System.out.println(obj);
 
 	}
 
@@ -18,7 +19,7 @@ public class ToStringEg {
 		this.minute = minute;
 		this.second = second;
 		// this object implicitly calls toString
-		System.out.println(this);
+//		System.out.println(this);
 	}
 	
 	public String toString(){

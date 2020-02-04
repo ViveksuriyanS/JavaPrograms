@@ -6,16 +6,16 @@ public class MethodHiding extends Parent {
 		Parent obj = new MethodHiding();
 		// This is not possible since the display method is hidden by declaring as
 		// private
-//		obj.display(); 
+		// obj.display(); 
 		obj.print();
 	}
 
 	private static void display() {
-		System.out.println("Base Display");
+		System.out.println("Child Display");
 	}
 
 	public void print() {
-		System.out.println("Base Print");
+		System.out.println("Child Print");
 	}
 
 }
@@ -29,3 +29,6 @@ class Parent {
 		System.out.println("Base Print");
 	}
 }
+
+
+// Private methods cannot be overridden

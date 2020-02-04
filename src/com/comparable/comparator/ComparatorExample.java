@@ -27,6 +27,14 @@ public class ComparatorExample {
 		System.out.println("Sorted by Price");
 		Collections.sort(snackMenu);
 		System.out.println(snackMenu.toString());
+
+		// Anonymous in the class
+		Comparator<Snacks> compareName = new Comparator<Snacks>() {
+			public int compare(Snacks s1, Snacks s2) {
+				return s1.compareTo(s2);
+			}
+		};
+		Collections.sort(snackMenu, compareName);
 	}
 
 }
