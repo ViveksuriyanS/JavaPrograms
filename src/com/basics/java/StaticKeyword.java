@@ -41,8 +41,10 @@ public class StaticKeyword {
 
 }
 
-class Class1 {
-
+class Class1 extends StaticKeyword {
+	public void func1() {
+		System.out.println(i);
+	}
 }
 
 // Static variables are shared across all the instances of the class and can be accessed without even creating the object
