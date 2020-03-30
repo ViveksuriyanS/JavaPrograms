@@ -53,6 +53,10 @@ public class SerializeDeserialize {
 }
 
 class Employee implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	transient int age; // Transient variables will not be serialized and while de-serializing the value
 						// will not be returned, instead default value will be returned
 	int id;

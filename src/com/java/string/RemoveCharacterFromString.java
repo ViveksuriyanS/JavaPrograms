@@ -7,6 +7,7 @@ public class RemoveCharacterFromString {
 	public static void main(String[] args) {
 		String input = "This is the input string";
 		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the index to be removed");
 		int i = scan.nextInt();
 		removeCharacterAt(input, i);
 		scan.close();

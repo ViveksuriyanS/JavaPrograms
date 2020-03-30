@@ -1,7 +1,7 @@
 package com.multithreading;
 
 public class SynchronizationMethods {
-
+// Object Level Locking
 	public static void main(String[] args) {
 		SynchronizationMethod sync = new SynchronizationMethod();
 		MyThread1 thread1 = new MyThread1(sync);

@@ -1,7 +1,7 @@
 package com.multithreading;
 
 public class SynchronizationStaticMethod {
-
+// Class level locking
 	public static void main(String[] args) {
 		SynchronizeResource sync1 = new SynchronizeResource();
 		Thread1 t1 = new Thread1(sync1);

@@ -5,6 +5,7 @@ public class CustomException1 {
 	public static void main(String[] args) {
 		try {
 			validateSalary(1600000);
+			validateSalary(2400000);
 		} catch (GreedyException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
