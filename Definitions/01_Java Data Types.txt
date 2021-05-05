@@ -1,0 +1,7 @@
+In Java 
+  * Primitive data types 
+   - Building block
+   - (boolean, byte, short, int, long, double, float, char)
+  * Non Primitive data types 
+   - Object based
+   - String, Array, Character, Integer

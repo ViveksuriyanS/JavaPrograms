@@ -7,6 +7,7 @@ public class Constructors {
 		ChildConstructor c = new ChildConstructor("a");
 		ChildConstructor c1 = new ChildConstructor("a", 1);
 		System.out.println(c.x + " " + c.a);
+		System.out.println(c1.x + " " + c1.a);
 	}
 
 }
@@ -40,6 +41,7 @@ class ChildConstructor extends ParentConstructor {
 
 	ChildConstructor(String x, int a) {
 		super(a);
+		this.x = x;
 		// this(x); Contructor cannot contain both super and this
 	}
 }

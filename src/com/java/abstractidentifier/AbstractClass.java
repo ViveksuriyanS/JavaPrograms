@@ -17,7 +17,8 @@ public class AbstractClass extends Marriage {
 abstract class Marriage {
 	abstract void marriedTo(String M, String F);
 
-//	abstract void breakupWith(String M, String F);
+	//abstract void breakupWith(String M, String F);
+	
 	public void inLove(String M, String F) {
 		System.out.println(M + " is in love with " + F);
 	}

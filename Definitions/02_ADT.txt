@@ -1,0 +1,11 @@
+Abstract Data Type
+  - Implementation is hidden
+  - Behavior can be used by calling the function eg. size(), add()
+  - Contains set of predefined functions (add, remove) and variables (default size, default index)
+  
+ADT is a black-box which hides the inner structure and design of the "Data Type" 
+
+Types
+ - List
+ - Stack
+ - Queue

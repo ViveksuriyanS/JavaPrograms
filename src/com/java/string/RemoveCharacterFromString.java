@@ -15,10 +15,13 @@ public class RemoveCharacterFromString {
 	}
 
 	public static void removeCharacterAt(String st, int i) {
-		st = st.substring(0, i) + st.substring(i + 1);
-		// Skips 4 letter then it will append to the string
-
-		System.out.println(st.substring(4));
+		// Eg i = 2
+		// This is the input string
+		// 0123456789
+		// 2 will be removed
+		System.out.println(st.substring(0, i)); // 0,2 => 01 == Th
+		System.out.println(st.substring(i + 1, st.length()));
+		st = st.substring(0, i) + st.substring(i + 1, st.length());
 		System.out.println(st);
 	}
 

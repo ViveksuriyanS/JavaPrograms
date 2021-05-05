@@ -1,0 +1,17 @@
+Stack is an ADT
+It follows FILO or LIFO fashion
+ - The element that are inserted at first can be processed at last
+ - In other words, the elements inserted at last will be processed First
+
+The Insertion and Deletion of element and all other operations can be done in O(N) time complexity
+
+Can be implemented by 
+ - Arrays (Static behavior)
+ - Linked List (Dynamic behavior)
+ 
+Operations supported
+ - Push -> Insert element at the TOP pointer 
+ - Pop  -> Deletes the TOP pointer element
+ - Top  -> Returns the TOP element, but don't delete
+ - IsEmpty -> Check if the stack is empty
+ - IsFull -> Check if the stack is full
