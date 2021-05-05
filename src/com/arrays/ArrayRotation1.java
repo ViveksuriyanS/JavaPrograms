@@ -29,16 +29,21 @@ public class ArrayRotation1 {
 			temp[i] = a[i];
 		}
 		int index = 0;
+
+
 		for (int ac : temp)
 			System.out.println(ac);
 		System.out.println("___________");
+
 		for (int j = num; j < a.length; j++) {
 			a[index] = a[j];
 			index++;
 		}
+
 		for (int ac : a)
 			System.out.println(ac);
 		System.out.println("___________");
+
 		for (int d = 0; d < temp.length; d++) {
 			a[index] = temp[d];
 			index++;

@@ -83,7 +83,6 @@ class Snacks implements Comparable<Snacks> {
 
 	@Override
 	public int compareTo(Snacks o1) {
-		// TODO Auto-generated method stub
 		if (price == o1.price) {
 			return 0;
 		} else if (o1.price > price) {

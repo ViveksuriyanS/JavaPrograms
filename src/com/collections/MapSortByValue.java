@@ -1,5 +1,6 @@
 package com.collections;
 
+import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -16,6 +17,8 @@ public class MapSortByValue {
 		map.put(3, 1);
 		// By default treeMap sort the map by key
 		System.out.println(map.entrySet());
+		System.out.println(Collections.max(map.entrySet(), Map.Entry.comparingByValue()));
+		System.out.println(Collections.max(map.entrySet(), Map.Entry.comparingByKey()));
 	}
 
 }

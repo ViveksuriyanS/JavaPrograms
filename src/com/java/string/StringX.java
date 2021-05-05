@@ -14,6 +14,8 @@ public class StringX {
 		System.out.println(s1 == s3); // false s1 in string pool, s3 in heap
 		System.out.println(s1 == s4); // true, points to same ref in string pool
 		System.out.println(s3 == s4); // false different reference
+		
+		Iterable it;
 	}
 
 }
