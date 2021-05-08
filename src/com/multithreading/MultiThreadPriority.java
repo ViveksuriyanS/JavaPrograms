@@ -12,7 +12,6 @@ public class MultiThreadPriority {
 					System.out.println(e);
 				}
 			}
-
 		});
 		Thread t2 = new Thread(() -> {
 			for (int i = 0; i < 5; i++) {

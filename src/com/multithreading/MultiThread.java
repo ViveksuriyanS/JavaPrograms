@@ -6,6 +6,7 @@ public class MultiThread {
 		A a = new A();
 		B b = new B();
 		a.start();
+		// Comment try..catch and run
 		try {
 			Thread.sleep(1000);
 		} catch (Exception e) {

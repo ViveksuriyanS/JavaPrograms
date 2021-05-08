@@ -2,9 +2,11 @@ package com.java.objects;
 
 import java.util.ArrayList;
 
-public final class Country {
-	private final String countryName;
-	private final ArrayList<String> states;
+public final class Country { // Declare class as final
+	private final String countryName; // Declare variables as private final
+	private final ArrayList<String> states; // ditto
+
+	// Only getter methods (no setters)
 
 	public Country(String countryName, ArrayList<String> states) {
 		this.countryName = countryName;

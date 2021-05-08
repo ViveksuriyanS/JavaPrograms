@@ -1,11 +1,12 @@
 package com.multithreading;
 
-public class SynchronizationMethods {
+public class TestSynchronization {
 // Object Level Locking
 	public static void main(String[] args) {
+		// Creating object to use common resource
 		SynchronizationMethod sync = new SynchronizationMethod();
-		MyThread1 thread1 = new MyThread1(sync);
-		MyThread2 thread2 = new MyThread2(sync);
+		MyThread1 thread1 = new MyThread1(sync); // Passing sync object in T1
+		MyThread2 thread2 = new MyThread2(sync); // Passing the same, sync object in T2
 		thread1.start();
 		thread2.start();
 	}
@@ -27,10 +28,12 @@ class SynchronizationMethod {
 class MyThread1 extends Thread {
 	SynchronizationMethod sync1;
 
+	// MyThread1 constructor with object arg
 	public MyThread1(SynchronizationMethod sync) {
 		sync1 = sync;
 	}
 
+	// rum method implementation
 	public void run() {
 		sync1.commonResource(5);
 	}
@@ -39,10 +42,12 @@ class MyThread1 extends Thread {
 class MyThread2 extends Thread {
 	SynchronizationMethod sync2;
 
+	// MyThread2 constructor with object arg
 	public MyThread2(SynchronizationMethod sync) {
 		sync2 = sync;
 	}
 
+	// rum method implementation
 	public void run() {
 		sync2.commonResource(6);
 	}
