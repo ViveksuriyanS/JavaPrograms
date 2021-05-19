@@ -18,23 +18,25 @@ public class ComparatorExample {
 		snackMenu.add(new Snacks("Spl Mix Chat", 60, 4.7d));
 		System.out.println("Sorted by rating");
 		Collections.sort(snackMenu, new RatingCompare());
-		System.out.println(snackMenu.toString());
+		System.out.println(snackMenu);
 
 		System.out.println("Sorted by name");
 		Collections.sort(snackMenu, new NameCompare());
-		System.out.println(snackMenu.toString());
+		System.out.println(snackMenu);
 
 		System.out.println("Sorted by Price");
 		Collections.sort(snackMenu);
-		System.out.println(snackMenu.toString());
+		System.out.println(snackMenu);
 
 		// Anonymous in the class
 		Comparator<Snacks> compareName = new Comparator<Snacks>() {
 			public int compare(Snacks s1, Snacks s2) {
-				return s1.compareTo(s2);
+//				return s1.name.compareTo(s2.name);
+				return s1.compareTo(s2); // Default Comparable Price
 			}
 		};
 		Collections.sort(snackMenu, compareName);
+		System.out.println(snackMenu);
 	}
 
 }

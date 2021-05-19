@@ -31,11 +31,11 @@ class Price {
 	// Hashcode generates a code using hashing function
 	// To store
 	public int hashCode() {
-		System.out.println("In hashcode");
+		//System.out.println("In hashcode");
 		int hashcode = 0;
 		hashcode = price * 20;
 		hashcode += item.hashCode();
-		System.out.println(hashcode);
+		//System.out.println(hashcode);
 		return hashcode;
 	}
 

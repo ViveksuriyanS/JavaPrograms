@@ -23,10 +23,8 @@ public class SerializeDeserialize {
 			writeStream.writeObject(emp1);
 			writeStream.close();
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -35,21 +33,17 @@ public class SerializeDeserialize {
 		try {
 			FileInputStream inputStream = new FileInputStream(fileName);
 			ObjectInputStream readStream = new ObjectInputStream(inputStream);
-			Employee empx1 = (Employee) readStream.readObject();
-			System.out.println(empx1.toString()); // Calls the overridden toString method
+			Employee employee = (Employee) readStream.readObject();
+			System.out.println(employee.toString()); // Calls the overridden toString method
 			readStream.close();
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-
 }
 
 class Employee implements Serializable {

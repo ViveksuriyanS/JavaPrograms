@@ -1,6 +1,9 @@
 package com.version.java8.stream;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.IntSummaryStatistics;
+import java.util.Map;
 import java.util.stream.IntStream;
 
 public class IntegerStreamEg {
@@ -61,6 +64,15 @@ public class IntegerStreamEg {
 		// Check if there are any odd/even number present in array
 		IntStream.of(inp).anyMatch(n -> n % 2 == 0); // If any one even present (T/F)
 		IntStream.of(inp).allMatch(n -> n % 2 == 0); // Check if all are even (T/F)
+
+		// 5 multiples
+		Arrays.asList(1,2,3,4,5).stream().map(i -> i*5).forEach(System.out::print);
+
+		// Count n number of times a character occurs in string
+		System.out.println();
+		String st = "Hi Hello There";
+		int count =(int) st.chars().filter(i -> i == 'e').count();
+		System.out.println(count);
 	}
 
 }

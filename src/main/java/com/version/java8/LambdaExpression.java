@@ -1,5 +1,7 @@
 package com.version.java8;
 
+import java.util.function.BiConsumer;
+
 public class LambdaExpression {
     public static void main(String[] args) {
         String input = "This is the message";
@@ -28,6 +30,13 @@ public class LambdaExpression {
         AddFuncInterface add = (a,b) -> a+b; // without return keyword or printing directly
         int out = add.add(4,8);
         System.out.println(out);
+
+        BiConsumer<Integer, Integer> bx = (a1, b1) -> System.out.println(a1 + b1);
+        bx.accept(5, 7);
     }
 }
 
+
+// Lambda Expression is an anonymous function
+// Means it doesn't have any name, return type or access modifiers
+// All we have is ->

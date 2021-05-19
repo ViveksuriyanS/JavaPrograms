@@ -38,21 +38,24 @@ public class StaticKeyword {
 	}
 
 	public void func1() {
-		System.out.println(i);
+		System.out.println(i + " Parent");
 	}
-	
-	
+
+	public static void X1() {
+
+	}
 
 }
 
 class Class1 extends StaticKeyword {
+	@Override
 	public void func1() {
-		System.out.println(i);
+		System.out.println(i + " Child");
 	}
 }
 
 // Static variables are shared across all the instances of the class and can be accessed without even creating the object
-// Static methods can be accessed directly in static and non-static methods without creating object
+// Static methods can be accessed directly in static and non-static methods without creating object (Cannot be overridden)
 // Static class can be defined within a class using static are called OuterClass
 // (Nested class with static keyword) -> OuterClass
 // (Nested class without static keyword) -> InnerClass
