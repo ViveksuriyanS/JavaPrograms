@@ -1,0 +1,16 @@
+Java I/O  --- java.io.package
+- To process the input and produce the output
+- Uses Stream concept to process I/O operations fast.
+- File handling can be done
+
+STREAM
+- Sequence of data (Bytes)
+- 3 types of Stream
+   ~ System.out
+   ~ System.in
+   ~ System.err
+   
+FileOutputStream -> Used to write data into the file
+FileInputStream -> Used to read data from the file
+
+BufferedOutputStream -> Used to buffer an output stream. Uses buffer to store data. Fast and efficient.

@@ -1,0 +1,15 @@
+Final
+    * It is a keyword
+    * Can be used with variable, method, class
+
+Finally
+    * It is a method block
+    * Used with try...catch block
+    * Used to clean the memories used in try...catch block
+
+Finalize
+    * It is a method for garbage collection.
+    * Used to clear the memory used by objects
+    * Garbage collector invokes finalize() method
+
+    Program - FinalFinallyFinalized.java

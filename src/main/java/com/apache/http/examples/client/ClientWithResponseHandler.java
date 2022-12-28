@@ -1,4 +1,4 @@
-package com.apache.http.examples.client;
+package main.java.com.apache.http.examples.client;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.ResponseHandler;

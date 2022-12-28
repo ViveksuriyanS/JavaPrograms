@@ -1,0 +1,22 @@
+Thread can be suspended for a period of time by using sleep static method
+	Thread.sleep(TimeInMilliSecond);
+	
+Thread can be implemented by two ways
+	- Extending Thread Class
+	- Implementing Runnable Interface
+
+Note: Implementing Runnable Interface is the most preferable way of implementation, 
+	~ The reason being, Java doesn't support Multiple inheritance
+	~ Make sure that we also create 2 Object
+		* Object of class
+		* Thread object
+
+Tutorial Video:
+https://www.youtube.com/watch?v=A1tnVMpWHh8&list=PLsyeobzWxl7rmuFYRpkqLanwoG4pQQ7oW&index=9
+
+
+Producer - Consumer
+	- Also known as Bounded-Buffer 
+	- It is a multi-process synchronization
+	- The efficient access/modify of a shared resource
+	
